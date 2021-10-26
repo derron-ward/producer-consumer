@@ -15,22 +15,21 @@ OPTIONS = -pthread -lrt -lstdc++ -o
 ###############################################################
 # Compile producer and consumer
 producer:
-	$(GCC) producer.cpp $(OPTIONS) producer
+	$(GCC) producer.cpp $(OPTIONS) producer.o
 	
 consumer:
-	$(GCC) consumer.cpp $(OPTIONS) consumer
+	$(GCC) consumer.cpp $(OPTIONS) consumer.o
 
 ###############################################################
 
 ###############################################################
 # Make the problem run
 run:
-	./producer & ./consumer &
+	./producer.o & ./consumer.o &
 
 ###############################################################
 # Remove executables
 clean:
-	rm -f producer
-	rm -f consumer
+	rm -f *.o
 
 ###############################################################
