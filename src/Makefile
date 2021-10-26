@@ -3,7 +3,7 @@
 ###############################################################
 # Variables
 GCC     = gcc
-OPTIONS = -pthread -lrt -o
+OPTIONS = -pthread -lrt -lstdc++ -o
 ###############################################################
 
 ###############################################################
@@ -14,8 +14,10 @@ OPTIONS = -pthread -lrt -o
 
 ###############################################################
 # Compile producer and consumer
-problem:
+producer:
 	$(GCC) producer.cpp $(OPTIONS) producer
+	
+consumer:
 	$(GCC) consumer.cpp $(OPTIONS) consumer
 
 ###############################################################
