@@ -8,7 +8,7 @@ The producer generates items and puts them onto the table. The consumer will pic
 # Getting Started
 
 ### Prerequisites
-* gcc - the following command will installs multiple packages including ```gcc```, ```g++``` and ```make```
+* gcc - the following command will install multiple packages including ```gcc```, ```g++``` and ```make```
 ```bash
 sudo apt install build-essential
 ```
