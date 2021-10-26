@@ -27,7 +27,7 @@ int main() {
     sem_t *mutex = sem_open("mutex", O_CREAT, 0666, 1);
 
     int loop = 10;
-    std::cout << "Consumer ready to recieve " << loop << " items." << std::endl;
+    std::cout << "Consumer ready to receive " << loop << " items." << std::endl;
 
     for (int i = 0; i < loop; ++i) {
 
