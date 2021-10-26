@@ -27,6 +27,7 @@ Or download the zip from [github](https://github.com/derron-ward/producer-consum
 ### Compiling and Running
 There are 2 ways to compile and run the project:
 1. Using the provided Makefile
+
     Compile the programs
     ```bash
     make producer
@@ -43,6 +44,7 @@ There are 2 ways to compile and run the project:
     make clean
     ```
 2. Manually inputing the commands in the terminal
+    
     Compile the programs
     ```bash
     gcc producer.cpp -pthread -lrt -lstdc++ -o producer.o
